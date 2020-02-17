@@ -52,6 +52,9 @@ mean(movies$domestic_gross)
 sd(movies$domestic_gross)
 summary(movies$domestic_gross)
 
+aggregate(domestic_gross ~ genre, data = movies, mean)
+aggregate(domestic_gross ~ genre + mpaa_rating, data = movies, mean)
+
 scale(movies$domestic_gross)
 
 cor(movies)

@@ -1,0 +1,42 @@
+---
+title: 'Homework #???'
+author: "Your Name Here"
+date: "Month Day, 2020"
+output: html_document
+---
+
+This example assignment examines the `Hitters` dataset in the `ISLR` package.  To begin, make sure the `ISLR` package is installed and run the following code:
+```{r}
+library(ISLR)
+```
+
+### Question 1
+Calculate the following descriptive statistics:
+
+a) What is the mean number of hits?
+```{r}
+mean(Hitters$Hits)
+```
+
+b) What is the standard deviation of the number of hits?
+```{r}
+sd(Hitters$Hits)
+```
+
+
+### Question 2
+Create and interpret the following plots:
+
+a) A histrogram for the number of home runs.
+```{r, fig.height = 3, fig.width = 3, fig.align = "center"}
+hist(Hitters$HmRun, xlab = "Home Runs", main = "Histogram of Home Runs")
+```
+
+The number of home runs is not symmetric as most hitters had a small number of home runs (skewed right).
+
+b) A scatter plot showing the number of home runs on the horizontal axis and the number of runs on the vertical axis.
+```{r, fig.height = 3, fig.width = 3, fig.align = "center"}
+plot(Hitters$HmRun, Hitters$Runs, xlab = "Home Runs", ylab = "Runs")
+```
+
+It looks like there is a positive relationship between the number of home runs and number of runs.
