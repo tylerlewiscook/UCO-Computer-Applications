@@ -8,7 +8,7 @@ chisq.test(peas, p = c(9/16, 3/16, 3/16, 1/16))
 library(ISLR)
 data(Credit)
 
-chisq.test(table(Credit$Gender))
+chisq.test(table(Credit$Ethnicity))
 
 
 
