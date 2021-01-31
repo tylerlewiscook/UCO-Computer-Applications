@@ -117,7 +117,8 @@ wine <- read.csv(file = "wine.csv")
 str(wine)
 
 
-advertising <- read.csv(url("http://faculty.marshall.usc.edu/gareth-james/ISL/Advertising.csv"))
+#advertising <- read.csv(url("http://faculty.marshall.usc.edu/gareth-james/ISL/Advertising.csv"))  link no longer works
+internet <- read.csv(file = "https://raw.githubusercontent.com/tylerlewiscook/UCO-Computer-Applications/master/Data/internet.csv")
 
 save(b, file = "favoriteMatrix.RData")
 rm(b)
