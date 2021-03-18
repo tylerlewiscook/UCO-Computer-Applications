@@ -8,6 +8,7 @@ data(forbes)
 plot(forbes$pres, forbes$bp)
 
 fit <- lm(bp ~ pres, data = forbes)
+coef(fit)
 summary(fit)
 abline(fit, lwd = 2)
 
