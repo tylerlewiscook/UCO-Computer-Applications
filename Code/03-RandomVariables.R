@@ -1,9 +1,9 @@
 # Random Variables
 
 # Probabilities --------------------------------------------
-dnorm(0)            # Density values: f(x) or p(x)
+dnorm(0)            # Density values: p(x) = P(X = x) for disc or f(x) for cont
 
-pnorm(0)            # Distribution values: F(x)
+pnorm(0)            # Distribution values: F(x) = P(x <= x)
 
 qnorm(0.5)          # Quantile values 
 
