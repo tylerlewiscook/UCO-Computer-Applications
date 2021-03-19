@@ -41,7 +41,7 @@ boxplot(movies$dg_mil ~ movies$genre)
 plot(movies$pb_mil, movies$dg_mil)
 plot(movies$pb_mil, movies$dg_mil, xlab = "Production Budget (in millions)", 
      ylab = "Domestic Gross (in millions)", pch = 2, col = "red")
-plot(movies$pb_mil, movies$dg_mil, col = c("red", "blue", "green", "orange")[movies$mpaa_rating])
+plot(movies$pb_mil, movies$dg_mil, col = c("red", "blue", "green", "orange")[movies$mpaa_rating]) # str(movies$mpaa_rating)?
 plot(movies$pb_mil, movies$dg_mil, pch = c(1, 5, 7, 8)[movies$mpaa_rating])
 
 
