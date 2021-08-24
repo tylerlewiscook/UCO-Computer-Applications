@@ -18,7 +18,8 @@ log(exp(1))
 log(10)
 log(10, 10)
 
-
+# Native pipe operator
+1 |> exp() |> log() 
 
 # Data structures -----------------------------------------------
 
@@ -53,6 +54,8 @@ z <- c(z, 11)	# append value "11" to z
 log(y)
 sum(y)
 which(z > 7)
+
+y |> log() |> sum()
 
 
 
