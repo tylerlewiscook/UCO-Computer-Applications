@@ -25,6 +25,7 @@ barplot(counts, legend = rownames(counts), args.legend = list(x = "topleft"))
 ?legend
 
 pie(table(movies$genre))
+movies$genre |> table() |> pie()
 
 hist(movies$domestic_gross)
 hist(movies$domestic_gross/1000000, xlab = "Domestic Gross (in millions)", 
