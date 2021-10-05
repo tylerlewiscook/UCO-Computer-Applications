@@ -77,9 +77,16 @@ TukeyHSD(out4)
 # Diagnostics
 par(mfrow = c(2,2))
 plot(out4)
+par(mfrow = c(1,1))
 
 library(car)
 leveneTest(fat ~ oil, data = doughnut)  # center = mean/median
 qqPlot(fat ~ oil, data = doughnut)
 
-par(mfrow = c(1,1))
+qqnorm(doughnut$fat)
+shapiro.test(doughnut$fat)
+
+
+
+
+
