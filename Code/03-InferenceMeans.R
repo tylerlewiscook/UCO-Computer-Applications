@@ -72,7 +72,7 @@ summary(out4)
 
 # Multiple comparisons
 TukeyHSD(out4)
-
+plot(TukeyHSD(out4))
 
 # Diagnostics
 par(mfrow = c(2,2))
