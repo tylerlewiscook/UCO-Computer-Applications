@@ -112,6 +112,7 @@ y <- runif(n)
 inside <- which(sqrt(x^2 + y^2) < 1)
 c <- rep("out", n)
 c[inside] <- "in"
+c <- as.factor(c)
 dat <- data.frame(x, y, c)
 
 plot(dat$x, dat$y, col = c("blue", "red")[dat$c])
