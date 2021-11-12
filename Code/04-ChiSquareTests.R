@@ -18,3 +18,4 @@ titanic <- matrix(c(202, 118, 178, 212, 123, 167, 528, 696), nrow = 4, ncol = 2)
 chisq.test(titanic)
 
 chisq.test(table(Credit$Gender, Credit$Student))
+chisq.test(Credit$Gender, Credit$Student)
