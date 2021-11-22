@@ -214,3 +214,27 @@ sum(first.correct)/n.iter
 sum(second.correct)/n.iter
 sum(third.correct)/n.iter
 sum(fourth.correct)/n.iter
+
+
+
+# Appendix --------------------------------------------------------------------------------------
+
+set.seed(101)
+
+rollsNew <- replicate(1000, sample(1:6, 10, replace = TRUE))
+xbar3 <- apply(rollsNew, 2, mean)
+hist(xbar3)
+mean(xbar3)
+sum(xbar3 != xbar1)
+
+
+
+maxSquared <- apply(rolls, 2, function(v) max(v)^2)
+
+
+
+set.seed(101)
+
+rollsNew2 <- replicate(1000, sample(1:6, 10, replace = TRUE), simplify = FALSE)
+xbar4 <- sapply(rollsNew2, mean)
+mean(xbar4)
