@@ -42,10 +42,10 @@ z
 y + z
 y * z
 
-z[2]			# second element of z
-z[-2]			# all elements of z except the second
-z[1:3]		# first, second, and third elements of z
-z <- c(z, 11)	# append value "11" to z
+z[2]			      # second element of z
+z[-2]		      	# all elements of z except the second
+z[1:3]	      	# first, second, and third elements of z
+z <- c(z, 11)  	# append value "11" to z
 
 log(y)
 sum(y)
@@ -71,14 +71,14 @@ b[, 1]		# first column
 
 
 # Data frames
-v1 <- c("Geralt", "Yennefer", "Ciri")
-v2 <- c(90, 102, 22)
-v3 <- c(1, 0, 0)
+v1 <- c("Oklahoma", "Texas", "Missouri")
+v2 <- c(4, 29, 6)
+v3 <- c(5, 38, 8)
 
-dat <- data.frame(name = v1, age = v2, gender = v3)
+dat <- data.frame(state = v1, pop = v2, house = v3)
 dat
 dat[, 1]
-dat$name
+dat$state
 dat[, c(1, 3)]
 dat[1,]
 dat[c(1, 3), ]
@@ -89,12 +89,14 @@ dat[c(1, 3), ]
 
 ?read.csv
 
-#data <- read.csv(file = "filename.whatever", ...) full file path not needed if file is in working directory
+#data <- read.csv(file = "filename.whatever", ...) 
+#wine <- read.csv(file = "C:\\Users\\tcook14\\Documents\\wine.csv")
+#wine <- read.csv(file = "C:/Users/tcook14/Documents/wine.csv")
+# full file path not needed if file is in working directory
+#wine <- read.csv(file = "wine.csv")
 
-wine <- read.csv(file = "wine.csv")
+wine <- read.csv(file = "https://raw.githubusercontent.com/tylerlewiscook/UCO-Computer-Applications/master/Data/wine.csv")
 str(wine)
-
-internet <- read.csv(file = "https://raw.githubusercontent.com/tylerlewiscook/UCO-Computer-Applications/master/Data/internet.csv")
 
 save(b, file = "favoriteMatrix.RData")
 rm(b)
@@ -105,6 +107,6 @@ write.csv(b, file = "favoriteData.csv")
 
 # Packages -------------------------------------------------------
 
-install.packages("ISLR")
-library(ISLR)
+install.packages("ggplot2")
+library(ggplot2)
 
