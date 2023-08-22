@@ -15,14 +15,12 @@ log(exp(1))
 # Help search with "?"
 ?log		
 
-log(10)
-log(10, 10)
-
 # Native pipe operator
 1 |> exp() |> log() 
 
-# Data structures -----------------------------------------------
 
+
+# Data structures -----------------------------------------------
 
 # Assignment operators
 x = 8
@@ -30,10 +28,8 @@ x
 x <- 7
 x
 
-
 x + 5
 2 * x
-
 
 
 # Vectors
@@ -58,8 +54,6 @@ which(z > 7)
 y |> log() |> sum()
 
 
-
-
 # Matrices
 matrix(data = 0, nrow = 4, ncol = 5)
 matrix(0, 4, 5)
@@ -75,13 +69,6 @@ b[1, 2]		# element in first row second column
 b[1, ]		# first row
 b[, 1]		# first column
 
-c <- cbind(a, b)
-c
-d <- rbind(a, b)
-d
-
-
-
 
 # Data frames
 v1 <- c("Geralt", "Yennefer", "Ciri")
@@ -96,29 +83,16 @@ dat[, c(1, 3)]
 dat[1,]
 dat[c(1, 3), ]
 
-attach(dat)
-name
-detach(dat)
-name
-
-
-fix(dat)
-
 
 
 # Data import/export ---------------------------------------------
 
-
-?read.table
 ?read.csv
 
-
-#data <- read.table(file = "filename.whatever", ...) full file path not needed if file is in working directory
+#data <- read.csv(file = "filename.whatever", ...) full file path not needed if file is in working directory
 
 wine <- read.csv(file = "wine.csv")
-#wine <- read.csv(file.choose())
 str(wine)
-
 
 internet <- read.csv(file = "https://raw.githubusercontent.com/tylerlewiscook/UCO-Computer-Applications/master/Data/internet.csv")
 
@@ -130,7 +104,6 @@ write.csv(b, file = "favoriteData.csv")
 
 
 # Packages -------------------------------------------------------
-
 
 install.packages("ISLR")
 library(ISLR)
