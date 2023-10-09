@@ -5,7 +5,7 @@
 peas <- c(315, 108, 102, 31)
 chisq.test(peas, p = c(9/16, 3/16, 3/16, 1/16))
 
-library(ISLR)
+library(ISLR2)
 data(Credit)
 
 chisq.test(table(Credit$Ethnicity))
