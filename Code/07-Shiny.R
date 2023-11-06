@@ -53,7 +53,7 @@ shinyApp(ui = ui, server = server)
 
 # Example 2 ------------------------------------------------------------------------
 
-library(ISLR)
+library(ISLR2)
 data(Auto)
 
 ui <- fluidPage(
