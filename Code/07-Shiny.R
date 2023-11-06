@@ -1,13 +1,13 @@
 # Shiny
 
 # Shiny cheat sheet:
-# https://shiny.rstudio.com/images/shiny-cheatsheet.pdf
+# https://shiny.posit.co/r/articles/start/cheatsheet/
 
 # Gallery of shiny apps:
-# https://shiny.rstudio.com/gallery/
+# https://shiny.posit.co/r/gallery/
 
 # Tutorial info:
-# https://shiny.rstudio.com/tutorial/
+# https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html
 
 # Upload your app to:
 # http://www.shinyapps.io/
