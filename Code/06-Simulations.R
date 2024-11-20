@@ -229,6 +229,6 @@ sum(xbar3 != xbar1)
 
 
 
-maxSquared <- apply(rolls, 2, function(v) max(v)^2)
+maxSquared <- apply(rollsNew, 2, function(v) max(v)^2)
 
 
