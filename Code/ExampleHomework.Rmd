@@ -5,7 +5,7 @@ date: "Month Day, Year"
 output: html_document
 ---
 
-This example assignment examines the `Hitters` dataset in the `ISLR` package.  To begin, make sure the `ISLR` package is installed and run the following code:
+This example assignment examines the `Hitters` dataset in the `ISLR2` package.  To begin, make sure the `ISLR2` package is installed and run the following code:
 ```{r}
 library(ISLR2)
 ```
